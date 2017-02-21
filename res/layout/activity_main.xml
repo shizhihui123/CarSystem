@@ -1,0 +1,262 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:stretchColumns="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textCartype"
+                    android:layout_weight="2"
+                    android:text="@string/CarTypeText" />
+
+                <EditText
+                    android:id="@+id/editCarType"
+                    android:layout_weight="1"
+                    android:ems="7"
+                    android:hint="请输入型号" >
+
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:contentDescription="@string/imgBtnDescrb"
+                    android:src="@drawable/pic" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textVIN"
+                    android:layout_weight="2"
+                    android:text="@string/VINText" />
+
+                <EditText
+                    android:id="@+id/editVIN"
+                    android:layout_weight="1"
+                    android:ems="7"
+                    android:hint="请输入车架号" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:src="@drawable/pic" />
+
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textEngine"
+                    android:layout_weight="2"
+                    android:text="@string/EngineText" />
+
+                <EditText
+                    android:id="@+id/editEngine"
+                    android:layout_weight="1"
+                    android:ems="7"
+                    android:hint="请输入发动机号" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    
+                    android:src="@drawable/pic" />
+            </TableRow>
+        </LinearLayout>
+        <LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textCarNum"
+                    android:layout_weight="2"
+                    android:text="车牌号" />
+
+                <EditText
+                    android:id="@+id/editCarNum"
+                    android:layout_weight="1"
+                    android:ems="7"
+                    android:hint="请输入车牌号" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    
+                    android:src="@drawable/pic" />
+            </TableRow>
+        </LinearLayout>
+		<LinearLayout>
+		    <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:id="@+id/textCarSize"
+                    android:layout_weight="1"
+                    android:text="整车尺寸(CM)" />
+
+                <EditText
+                    android:id="@+id/editCarLength"
+                    android:layout_weight="1"
+                    android:hint="长" 
+                    android:numeric="integer"/>
+                 <EditText
+                    android:id="@+id/editCarWidth"
+                    android:layout_weight="1"
+                    android:hint="宽" 
+                    android:numeric="integer"/>
+                  <EditText
+                    android:id="@+id/editCarHeight"
+                    android:layout_weight="1"
+                    android:hint="高" 
+                    android:numeric="integer"/>
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    
+                    android:src="@drawable/pic" />
+             </TableRow>
+        </LinearLayout>
+        <LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textSeatNum"
+                    android:layout_weight="2"
+                    android:text="@string/SeatNumText" />
+
+                <Spinner
+                    android:id="@+id/spinnerSeatNum"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:entries="@array/SeatNums" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    
+                    android:src="@drawable/pic" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textTyre"
+                    android:layout_weight="2"
+                    android:text="@string/Tyre" />
+
+                <EditText
+                    android:id="@+id/editTyre"
+                    android:layout_weight="1"
+                    android:ems="7"
+                    android:hint="请输入汽车款型" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    
+                    android:src="@drawable/pic" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/textTriangle"
+                    android:layout_weight="2"
+                    android:text="@string/TriangleText" />
+
+                <Spinner
+                    android:id="@+id/spinnerTriangle"
+                    android:layout_weight="1"
+                    android:entries="@array/Triangle" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:src="@drawable/pic" />
+            </TableRow>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            style="@style/AppBaseTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

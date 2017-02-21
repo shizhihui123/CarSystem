@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">车辆信息采集系统</string>
+    <string name="action_settings">设置Ip地址与端口</string>
+    <string name="CarTypeText">车辆型号</string>
+    <string name="editCarTypeText">输入车辆型号</string>
+    <string name="VINText">车架号</string>
+    <string name="editVINText">输入车架号</string>
+    <string name="EngineText">发动机号</string>
+    <string name="editEngineText">输入发动机号</string>
+    <string name="SeatNumText">座位数</string>
+    <string name="editSeatNumText">输入座位数</string>
+    <string name="Tyre">汽车款型</string>
+    <string name="editTyre">输入轮胎样式</string>
+    <string name="TriangleText">三角架</string>
+    <string name="editTriangleText">输入三角牌</string>
+    <string name="ButtonText">提交</string>
+    <string name="SpinnerSeatTip">选择座位数</string>
+    <string name="imgBtnDescrb">按下拍照</string>
+    <string name="btnSubmit">提交</string>
+    <string name="dialogTitle">IP与端口设置</string>
+    <string name="dialogBtnCancel">取消</string>
+    <string name="dialogBtnSure">确定</string>
+    <string name="ip">Ip地址:</string>
+    <string name="currentIp">当前Ip地址:</string>
+    <string name="port">端口:</string>
+    <string name="currentPort">当前端口:</string>
+    
+    <string name="preference_host_key">HOST_KEY</string>
+    <string name="carSystem">carSystem</string>
+    <string name="preference_port_key">PORT_KEY</string>
+</resources>
